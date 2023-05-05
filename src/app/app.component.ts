@@ -6,5 +6,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'piping';
+  
+  receiverName: string = "";
+  dateVal: string = '';
+  amount: number = 0; 
+
+  onNameInput(val: string){
+    this.receiverName = val
+  }
+
+  onDateInput(val: string){
+    this.dateVal = val
+  }
+
+  onAmountInput(val: number){
+    this.amount = val
+  }
 }
